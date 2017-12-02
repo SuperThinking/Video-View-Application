@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="straightforwardapps.dectwo.MainActivity">
+
+    <VideoView
+        android:layout_width="wrap_content"
+        android:layout_height="175dp"
+        android:id="@+id/vv"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/night_sky"
+        android:onClick="first"
+        android:layout_below="@+id/space"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ns"/>
+
+    <Space
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/space"/>
+
+    <Space
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/space1"
+        android:layout_below="@+id/ns"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/flower_blooming"
+        android:onClick="second"
+        android:layout_below="@id/space1"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <VideoView
+        android:layout_centerHorizontal="true"
+        android:layout_width="330dp"
+        android:layout_height="175dp"
+        android:id="@+id/vv"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/night_sky"
+        android:onClick="first"
+        android:layout_toLeftOf="@+id/space"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/ns"/>
+
+    <Space
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/space"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/flower_blooming"
+        android:onClick="second"
+        android:layout_toRightOf="@id/space"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
