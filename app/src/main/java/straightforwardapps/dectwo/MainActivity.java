@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
     import android.widget.Button;
     import android.widget.EditText;
     import android.widget.Toast;
+    import android.widget.VideoView;
 
     import com.google.android.youtube.player.YouTubeBaseActivity;
     import com.google.android.youtube.player.YouTubeInitializationResult;
@@ -80,7 +81,7 @@ public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.O
     private YouTubePlayerView youTubeView;
     private YouTubePlayer player;
     EditText txt;
-    Button but;
+    Button but, na;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -89,6 +90,7 @@ public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.O
 
         txt = (EditText) findViewById(R.id.text);
         but = (Button) findViewById(R.id.but);
+        na = (Button) findViewById(R.id.na);
         youTubeView = (YouTubePlayerView) findViewById(R.id.youtube_view);
         youTubeView.initialize(Config.YOUTUBE_API_KEY, this);
     }
@@ -134,13 +136,10 @@ public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.O
         }
     }
 
-    public void first(View v)
+    public void nextact(View v)
     {
-        player.cueVideo("android.resource://"+getPackageName()+"/"+R.raw.v1);
-    }
-    public void second(View v)
-    {
-        player.cueVideo("android.resource://"+getPackageName()+"/"+R.raw.v2);
+        Intent i = new Intent(this, MainActivity2.class);
+        startActivity(i);
     }
 
 }
